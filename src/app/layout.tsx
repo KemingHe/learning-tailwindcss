@@ -5,8 +5,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Learning Tailwind CSS",
-  description:
-    "NextJS TailwindCSS DaisyUI demo for learning responsive web UI."
+  description: "NextJS TailwindCSS DaisyUI demo for learning responsive web UI."
 };
 
 export default function RootLayout({
@@ -14,7 +13,7 @@ export default function RootLayout({
 }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="min-h-screen">{children}</body>
     </html>
   );
 }
